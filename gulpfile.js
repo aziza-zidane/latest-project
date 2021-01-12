@@ -23,11 +23,18 @@ var gulp = require("gulp"),
             
         
     });
+gulp.task("js", function () {
+    return gulp.src("project/js/*.js")
+        .pipe(concat("mainjs.js"))
+        .pipe(gulp.dest("dist/js"))
+        
+    })
 
 
 gulp.task("watch", function () {
     // require("./server.js")
     gulp.watch("project/html/*.pug", gulp.series("html"));
+    gulp.watch("project/js/*.js", gulp.series("js"));
     gulp.watch(["project/css/**/*.css","project/css/**/*.scss"] , gulp.series("css"));
         
 });

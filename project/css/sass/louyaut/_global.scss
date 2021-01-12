@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body{
 
@@ -14,4 +16,8 @@ body{
         padding: 20px;
         float: right;
     }
+}
+canvas{
+    background-color: #ddd;
+    p{color:#000}
 }

@@ -7,10 +7,29 @@ html(lang="en")
     title #{pageTitle}
     include pug/layout/styles
   body
-    .page.home-page
-      include pug/layout/sidebar
-      .content-area content
-        h1 #{pageTitle}
+    
+    canvas(id="canvasOne" width="300" height="300")
+      p testing GDFG TRD
+      ul
+        li
+          a(href="/html") HTML
+
+    //- .page.home-page
+      //- include pug/layout/sidebar
+      //- .content-area content
+        //-  header header test content test
+            //- i.fas.fa-exchange-alt.fa-2x.toggle-class
+        //-  div.test 
+            //- h1 #{pageTitle}
+    script(src="https://kit.fontawesome.com/ca94c52ba5.js"    crossorigin="anonymous") 
+    script(src="js/mainjs.js")
+
+
+
+              
+
+
+
     
 
 
